@@ -1,0 +1,103 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+   <title>Black Goose Bistro: Pizza-on-Demand</title>
+   <style type="text/css">
+      ol, ul { 
+     list-style-type: none;
+      } 
+    
+   </style>
+</head>
+
+<body>
+
+<h1>Band Builder Sign Up</h1>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="form.html">Get Started</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="musicians.html">Meet Our Musicians</a></li>
+    <li><a href="bandcamp.html">Band Camp</a></li>
+    <li><a href="vision.html">Vision</a></li>
+  </ul>
+
+<p>Join our community of musicians and find your next bandmate!</p>
+
+
+<form action="formphp.html" method="post">
+
+<fieldset>
+  <legend>Your Information</legend>
+  <ul>
+    <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+    <li><label for="form-address">Zip Code:</label> <input type="text" name="address" id="form-address"></li>
+    <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+    <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+    <li>About you<br>
+    <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long."></textarea></li>
+  </ul>
+</fieldset>
+
+<h2>What kind of musician are you?</h2>
+
+<fieldset>
+  <legend>Musician Details</legend>
+  <fieldset>
+    <legend>Instrument <em>(Choose one)</em>:</legend>
+    <ul>
+      <li><label><input type="radio" name="instrument" value="guitar"> Guitar</label></li>
+      <li><label><input type="radio" name="instrument" value="piano"> Piano</label></li>
+      <li><label><input type="radio" name="instrument" value="drums"> Drums</label></li>
+      <li><label><input type="radio" name="instrument" value="bass"> Bass</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend>Genre <em>(Choose one)</em>:</legend>
+    <ul>
+      <li><label><input type="radio" name="genre" value="rock"> Rock</label></li>
+      <li><label><input type="radio" name="genre" value="jazz"> Jazz</label></li>
+      <li><label><input type="radio" name="genre" value="classical"> Classical</label></li>
+      <li><label><input type="radio" name="genre" value="pop"> Pop</label></li>
+    </ul>
+  </fieldset>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>What are you looking for in a band? <em>(Choose as many as you want)</em></legend>
+    <ul>
+      <li><label><input type="checkbox" name="toppings[]" value="redsauce"> Music collaboration</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="whitesauce"> Creative expression</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Community involvement</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Performance opportunities</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Learning and growth</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="peppers"> Networking</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Songwriting</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Number</legend>
+  <p>How many bandmates are you looking for? 
+  <select name="pizzas" size="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+  </p>
+  </fieldset>
+
+</fieldset> <!-- closes 'Pizza Specs' fieldset -->
+
+<p><input type="submit" value="Finish"></p>
+
+</form>
+
+</body>
+</html>
